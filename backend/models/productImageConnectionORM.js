@@ -1,0 +1,29 @@
+module.exports=(sequelize,DataTypes)=>{
+    const productimageconnection=sequelize.define("productimageconnection",{
+        productId:{
+            type:DataTypes.INTEGER,
+            allowNull:true
+        },
+        image1Id:{
+            type:DataTypes.INTEGER,
+            allowNull:true
+        },
+        image2Id:{
+            type:DataTypes.INTEGER,
+            allowNull:true
+        },
+        image3Id:{
+            type:DataTypes.INTEGER,
+            allowNull:true
+        },
+        image4Id:{
+            type:DataTypes.INTEGER,
+            allowNull:true
+        },
+        image5Id:{
+            type:DataTypes.INTEGER,
+            allowNull:true
+        }
+    })
+    return productimageconnection
+}

@@ -1,0 +1,312 @@
+.App {
+    height: auto;
+    width: 100vw;
+}
+
+body {
+    margin-left: 0px;  
+    margin-top: 0px;
+}
+
+.navBar {
+    border-bottom: 1px solid gainsboro;
+    background-color: RGB(240, 240, 240);
+    display: flex;
+    flex-direction: row;
+}
+
+.navBar img:hover {
+    cursor: pointer;
+}
+
+.navBar .searchForm {
+    display: flex;
+    align-items: center;
+}
+
+.navBar .searchForm .inputAndSearch {
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+
+}
+
+.navBar .searchForm .inputAndSearch input {
+    width: 500px;
+    height: 25px;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.navBar .searchForm .inputAndSearch #SearchIcon {
+    border-radius: 0px 8px 8px 0px;
+    background-color: rgb(40, 96, 145);
+    width: 40px;
+    height: 30px;
+    color: white;
+}
+
+.navBar .searchForm .inputAndSearch #SearchIcon:hover {
+    cursor: pointer;
+    background-color: rgb(102, 167, 224);
+}
+
+.navBar .searchForm .add div {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.navBar .searchForm .add div:hover {
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.dropbtn {
+    margin-top: 7px;
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+    background-color: #2980B9;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+
+}
+.dropdown-content button {
+    color: black;
+    border-radius: 10px;
+    padding: 5px 5px;
+    text-decoration: none;
+    display: block;
+    opacity: 0.5;
+    hover:pointer;
+
+}
+.dropdown a:hover {
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+.show {
+    display: block;
+}
+
+.dropdown {
+    margin-left: auto;
+    padding-right: 25px;
+
+    margin-bottom: 10px;
+}
+
+#facebook {
+    display: flex;
+    align-items: center;
+    color: rgb(66 103 178);
+}
+
+.loginContainer {
+    width: 400px;
+    height: 300px;
+    border: 3px solid rgb(40, 96, 145);
+    ;
+    display: inline-block;
+    border-radius: 8px;
+}
+
+.loginData {
+    width: 50%;
+    height: 30%;
+    display: block;
+    margin-left: 100px;
+    margin-top: 30px;
+}
+
+.loginData input {
+    height: 30px;
+    margin: 10px;
+    border: 2px solid rgb(40, 96, 145);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.loginData button {
+    margin-left: 40px;
+    width: 60%;
+    border-radius: 10px;
+    border-color: rgb(40, 96, 145);
+    ;
+}
+
+.loginForgot {
+    margin-top: 20px;
+}
+
+.loginForgot a {
+    float: left;
+}
+
+.dropdownCategory {
+    width: 120px;
+    position: relative
+    ;
+    margin: 2em;
+}
+
+.dropdownCategory * {
+    box-sizing: border-box;
+}
+
+.select {
+    background: #2a2f3b;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px #2a2f3b solid;
+    border-radius: 0.5em;
+    padding: 0.3em;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.select-clicked {
+    border: 2px #26489a solid;
+    box-shadow: 0 0 0.8em #26489a;
+}
+
+.select:hover {
+    background: #323741;
+}
+
+.caret {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid #fff;
+    transition: 0.3s;
+}
+
+.caret-rotate {
+    transform: rotate(180deg);
+}
+
+.menu {
+    list-style: none;
+    padding: 0.2em 0.5em;
+    background: #323741;
+    border: 1px #363a43 solid;
+    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
+    border-radius: 0.5em;
+    color: #9fa5b5;
+    position: absolute;
+    top: 1.2em;
+    left: 50%;
+    width:100%;
+    transform: translateX(-50%);
+    opacity:0;
+    display: none;
+    transition:0.2s;
+    z-index: 1;
+}
+.menu li{
+    font-size: 18px;
+    padding: 0.1em 0.2em;
+    margin: 0.3em 0;
+    border-radius: 0.5em;
+    cursor:pointer;
+}
+.menu li:hover{
+    background: #2a2d35;
+}
+.active{
+    background: #23242a;
+}
+.menu-open{
+    display:block;
+    opacity: 1;
+}
+.imagesPreviewContainer{
+    background-color: #23242a;
+    width: 30%;
+    min-width: 300px;
+    height:15px;
+    position:relative;
+    margin: 50px auto;
+    padding: 50px 20px;
+    border-radius: 7px;
+    box-shadow: 0 20px 35px rgba(0,0,0,0.4);
+}
+.imagesPreviewContainer #imagePreviewInputFile{
+    display: none;
+}
+.imagesPreviewContainer label{
+    display: block;
+    position:relative;
+    background-color: #025bee;
+    color:#ffffff;
+    font-size: 8px;
+    text-align: center;
+    font-family: "Rubik",sans-serif;
+    width: 50px;
+    height: 15px;
+        padding: 18px 0;
+    margin-top: -35px;
+    border-radius: 5px;
+    cursor:pointer;
+}  
+.imagesPreviewContainer p{
+    text-align: center;
+    margin: 10px 0 30px 0;
+}
+
+.imagesPreviewContainer #images{
+    width: 90%;
+    /*border:1px solid black; */
+    position: relative;
+   margin: auto;
+    display: flex;
+    margin-left:15px;
+    margin-top:-10%;
+   
+}
+.imagesPreviewContainer figure{
+   
+    width: 40%;
+}
+.imagesPreviewContainer img{
+    width: 100%;
+  
+}
+.imagesPreviewContainer figcaption{
+   display: none;
+    }
