@@ -1,0 +1,20 @@
+# Root-level safety net
+node_modules/
+/package.json
+/package-lock.json
+
+# Secrets — never commit
+.env
+.env.local
+config.json
+backend/config/config.json
+
+# Build outputs
+dist/
+build/
+.vite/
+
+# OS junk
+.DS_Store
+Thumbs.db
+*.log
